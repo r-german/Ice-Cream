@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 36px;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 700;
+}
+
+select {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template: 112px 1fr 1163px/1440px;
+}
+
+header {
+  border-bottom: 1px solid black;
+  padding: 0px 72px 0px 72px;
+  background-color: rgb(254, 199, 126);
+  display: grid;
+  grid-template: 112px/150px 1fr 150px;
+}
+
+nav {
+  border: 1px solid black;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.nav__menu {
+  margin-top: 55px;
+  align-self: start;
+  justify-self: start;
+}
+.nav__menu .menu__text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 29px;
+  color: black;
+}
+
+.nav__find-us {
+  align-self: start;
+  justify-self: end;
+  margin-top: 55px;
+}
+.nav__find-us .find-us__text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 29px;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  line-height: 120px;
+  color: rgb(204, 42, 65);
+}
+
+.contact-us {
+  margin-top: 40.5px;
+  height: 53px;
+}
+.contact-us .contact-us__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: rgb(204, 42, 65);
+  color: rgb(236, 233, 233);
+  padding: 14.5px 24px 14.5px 24px;
+}/*# sourceMappingURL=Ice_Cream scss.css.map */

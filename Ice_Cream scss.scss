@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import "Ice_Cream nulling styles.scss";
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template: 112px 1fr 1163px / 1440px;
+}
+
+header{
+    border-bottom: 1px solid black;
+    padding: 0px 72px 0px 72px;
+    background-color: rgba(254, 199, 126, 1);
+    display: grid;
+    grid-template: 112px / 150px 1fr 150px;
+}
+
+nav{
+    border: 1px solid black;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.nav__menu{
+    margin-top: 55px;
+    align-self: start;
+    justify-self: start;
+    .menu__text{
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 29px;
+        color:black;
+    }
+}
+
+.nav__find-us{
+    align-self: start;
+    justify-self: end;
+    margin-top: 55px;
+    .find-us__text{
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 29px;
+        color:black;
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    line-height: 120px;
+    color: rgba(204, 42, 65, 1);
+}
+
+.contact-us{
+    margin-top: 40.5px;
+    height: 53px;
+    .contact-us__text{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        background-color: rgba(204, 42, 65, 1);
+        color: rgba(236, 233, 233, 1);
+        padding: 14.5px 24px 14.5px 24px;
+    }
+}
