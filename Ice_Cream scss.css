@@ -32,6 +32,8 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 input, button, textarea {
@@ -308,22 +310,22 @@ h1 {
 
 @media (max-width: 1200px) {
   .content__box1 {
-    padding: 45px 0px 59.5px 0px;
+    padding: 45px 0px 154px 0px;
   }
 }
 @media (max-width: 992px) {
   .content__box1 {
-    padding: 40px 0px 49px 0px;
+    padding: 40px 0px 131px 0px;
   }
 }
 @media (max-width: 767px) {
   .content__box1 {
-    padding: 35px 0px 38.5px 0px;
+    padding: 35px 0px 108px 0px;
   }
 }
 @media (max-width: 479px) {
   .content__box1 {
-    padding: 30px 0px 28px 0px;
+    padding: 30px 0px 85px 0px;
   }
 }
 .box1__fced {
@@ -829,13 +831,13 @@ h1 {
   -webkit-animation: sponsors 20s linear infinite;
           animation: sponsors 20s linear infinite;
 }
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food {
+.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-2, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-3 {
   width: 160px;
   display: -ms-grid;
   display: grid;
   justify-items: center;
 }
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food .food__img {
+.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food .food__img, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food .food-2__img, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food .food-3__img, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-2 .food__img, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-2 .food-2__img, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-2 .food-3__img, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-3 .food__img, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-3 .food-2__img, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-3 .food-3__img {
   width: 50%;
 }
 
@@ -845,15 +847,18 @@ h1 {
   }
   .box1__featured-in .featured-in__text {
     font-size: 27px;
-    margin-bottom: 42.5px;
   }
   .box1__featured-in .feaurured-in__fi-sponsors {
-    min-height: 72px;
+    top: 66.5px;
+    -ms-grid-rows: 72px;
+    -ms-grid-columns: (auto)[10];
+        grid-template: 72px/repeat(10, auto);
   }
   .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan,
 .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed,
 .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-2, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan-2,
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people-2, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed-2 {
+.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people-2, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed-2,
+.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-3, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan-3 {
     width: 144px;
   }
 }
@@ -863,16 +868,21 @@ h1 {
   }
   .box1__featured-in .featured-in__text {
     font-size: 24px;
-    margin-bottom: 35px;
   }
   .box1__featured-in .feaurured-in__fi-sponsors {
-    min-height: 64px;
+    top: 56px;
+    -ms-grid-rows: 64px;
+    -ms-grid-columns: (auto)[8];
+        grid-template: 64px/repeat(8, auto);
   }
   .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan,
 .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed,
 .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-2, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan-2,
 .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people-2, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed-2 {
     width: 128px;
+  }
+  .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-3, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan-3 {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -881,10 +891,12 @@ h1 {
   }
   .box1__featured-in .featured-in__text {
     font-size: 21px;
-    margin-bottom: 27.5px;
   }
   .box1__featured-in .feaurured-in__fi-sponsors {
-    min-height: 56px;
+    top: 45.5px;
+    -ms-grid-rows: 56px;
+    -ms-grid-columns: (auto)[8];
+        grid-template: 56px/repeat(8, auto);
   }
   .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan,
 .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed,
@@ -893,22 +905,34 @@ h1 {
     width: 112px;
   }
 }
+@media (max-width: 600px) {
+  .box1__featured-in .feaurured-in__fi-sponsors {
+    width: 266.6666666667%;
+  }
+}
 @media (max-width: 479px) {
   .box1__featured-in {
     margin-top: 42px;
   }
   .box1__featured-in .featured-in__text {
     font-size: 18px;
-    margin-bottom: 20px;
   }
   .box1__featured-in .feaurured-in__fi-sponsors {
-    min-height: 48px;
+    top: 35px;
+    -ms-grid-rows: 48px;
+    -ms-grid-columns: (auto)[8];
+        grid-template: 48px/repeat(8, auto);
   }
   .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan,
 .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed,
 .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-2, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan-2,
 .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people-2, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed-2 {
     width: 96px;
+  }
+}
+@media (max-width: 340px) {
+  .box1__featured-in .feaurured-in__fi-sponsors {
+    width: 320%;
   }
 }
 @-webkit-keyframes sponsors {
@@ -929,6 +953,28 @@ h1 {
   100% {
     -webkit-transform: translateX(-40%);
             transform: translateX(-40%);
+  }
+}
+@media (max-width: 992px) {
+  @-webkit-keyframes sponsors {
+    0% {
+      -webkit-transform: rotateZ(360deg);
+              transform: rotateZ(360deg);
+    }
+    100% {
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+  }
+  @keyframes sponsors {
+    0% {
+      -webkit-transform: rotateZ(360deg);
+              transform: rotateZ(360deg);
+    }
+    100% {
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
   }
 }
 .content__box2 {
