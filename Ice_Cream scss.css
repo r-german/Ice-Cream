@@ -32,8 +32,6 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 input, button, textarea {
@@ -305,7 +303,7 @@ h1 {
 }
 .content__box1 {
   background-color: rgb(254, 199, 126);
-  padding: 50px 0px 70px 0px;
+  padding: 50px 0px 177px 0px;
 }
 
 @media (max-width: 1200px) {
@@ -807,26 +805,31 @@ h1 {
 }
 .box1__featured-in {
   margin-top: 70px;
+  position: relative;
 }
 .box1__featured-in .featured-in__text {
   font-size: 30px;
+  line-height: 1;
   font-weight: 700;
   color: rgb(204, 42, 65);
   text-align: center;
-  margin-bottom: 50px;
 }
 .box1__featured-in .feaurured-in__fi-sponsors {
-  min-height: 80px;
-  position: relative;
-}
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food {
   position: absolute;
-  top: 0%;
-  left: 100%;
+  top: 77px;
+  left: 0;
+  width: 200%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80px;
+  -ms-grid-columns: (auto)[10];
+      grid-template: 80px/repeat(10, auto);
   -webkit-transform: rotateZ(360deg);
           transform: rotateZ(360deg);
-  -webkit-animation: sponsors 40s linear infinite -35s;
-          animation: sponsors 40s linear infinite -35s;
+  -webkit-animation: sponsors 20s linear infinite;
+          animation: sponsors 20s linear infinite;
+}
+.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food {
   width: 160px;
   display: -ms-grid;
   display: grid;
@@ -835,76 +838,6 @@ h1 {
 .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food .food__img {
   width: 50%;
 }
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan {
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
-  -webkit-animation: sponsors 40s linear infinite -30s;
-          animation: sponsors 40s linear infinite -30s;
-}
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people {
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
-  -webkit-animation: sponsors 40s linear infinite -25s;
-          animation: sponsors 40s linear infinite -25s;
-}
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed {
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
-  -webkit-animation: sponsors 40s linear infinite -20s;
-          animation: sponsors 40s linear infinite -20s;
-}
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-2 {
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
-  -webkit-animation: sponsors 40s linear infinite -15s;
-          animation: sponsors 40s linear infinite -15s;
-  width: 160px;
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-}
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-2 .food-2__img {
-  width: 50%;
-}
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan-2 {
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
-  -webkit-animation: sponsors 40s linear infinite -10s;
-          animation: sponsors 40s linear infinite -10s;
-}
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people-2 {
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
-  -webkit-animation: sponsors 40s linear infinite -5s;
-          animation: sponsors 40s linear infinite -5s;
-}
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed-2 {
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
-  -webkit-animation: sponsors 40s linear infinite;
-          animation: sponsors 40s linear infinite;
-}
 
 @media (max-width: 1200px) {
   .box1__featured-in {
@@ -912,7 +845,6 @@ h1 {
   }
   .box1__featured-in .featured-in__text {
     font-size: 27px;
-    line-height: 32.4px;
     margin-bottom: 42.5px;
   }
   .box1__featured-in .feaurured-in__fi-sponsors {
@@ -931,7 +863,6 @@ h1 {
   }
   .box1__featured-in .featured-in__text {
     font-size: 24px;
-    line-height: 28.8px;
     margin-bottom: 35px;
   }
   .box1__featured-in .feaurured-in__fi-sponsors {
@@ -950,7 +881,6 @@ h1 {
   }
   .box1__featured-in .featured-in__text {
     font-size: 21px;
-    line-height: 25.2px;
     margin-bottom: 27.5px;
   }
   .box1__featured-in .feaurured-in__fi-sponsors {
@@ -969,7 +899,6 @@ h1 {
   }
   .box1__featured-in .featured-in__text {
     font-size: 18px;
-    line-height: 21.6px;
     margin-bottom: 20px;
   }
   .box1__featured-in .feaurured-in__fi-sponsors {
@@ -988,8 +917,8 @@ h1 {
             transform: rotateZ(360deg);
   }
   100% {
-    -webkit-transform: translateX(-1245%);
-            transform: translateX(-1245%);
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
   }
 }
 @keyframes sponsors {
@@ -998,30 +927,8 @@ h1 {
             transform: rotateZ(360deg);
   }
   100% {
-    -webkit-transform: translateX(-1245%);
-            transform: translateX(-1245%);
-  }
-}
-@media (max-width: 479px) {
-  @-webkit-keyframes sponsors {
-    0% {
-      -webkit-transform: rotateZ(360deg);
-              transform: rotateZ(360deg);
-    }
-    100% {
-      -webkit-transform: translateX(-963%);
-              transform: translateX(-963%);
-    }
-  }
-  @keyframes sponsors {
-    0% {
-      -webkit-transform: rotateZ(360deg);
-              transform: rotateZ(360deg);
-    }
-    100% {
-      -webkit-transform: translateX(-963%);
-              transform: translateX(-963%);
-    }
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
   }
 }
 .content__box2 {
@@ -1489,7 +1396,7 @@ h1 {
 }
 @media (max-width: 400px) {
   .box3__box3-row1, .box3__box3-row2, .box3__box3-row3 {
-    width: 200%;
+    width: 160%;
   }
 }
 @media (max-width: 340px) {
