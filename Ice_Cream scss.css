@@ -124,7 +124,6 @@ select::-ms-expand {
   opacity: 0;
 }
 .box1__box1-slides .box1-slides__slides-div3 .slides-div3__div3-circle .div1-circle__text2, .box1__box1-slides .box1-slides__slides-div2 .slides-div2__div2-circle .div1-circle__text2, .box1__box1-slides .box1-slides__slides-div1 .slides-div1__div1-circle .div1-circle__text2, .box1__box1-slides .box1-slides__slides-div3 .slides-div3__div3-circle .div2-circle__text2, .box1__box1-slides .box1-slides__slides-div2 .slides-div2__div2-circle .div2-circle__text2, .box1__box1-slides .box1-slides__slides-div1 .slides-div1__div1-circle .div2-circle__text2, .box1__box1-slides .box1-slides__slides-div3 .slides-div3__div3-circle .div3-circle__text2, .box1__box1-slides .box1-slides__slides-div2 .slides-div2__div2-circle .div3-circle__text2, .box1__box1-slides .box1-slides__slides-div1 .slides-div1__div1-circle .div3-circle__text2 {
-  text-rendering: optimizeLegibility;
   padding: 0px 12px;
 }
 
