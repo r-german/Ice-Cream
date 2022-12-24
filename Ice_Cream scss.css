@@ -23,6 +23,8 @@ nav, footer, header, aside {
 }
 
 html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -465,15 +467,10 @@ h1 {
   justify-items: center;
 }
 .box1__box1-slides .box1__hover, .box1__box1-slides .box1__click {
+  position: absolute;
+  top: 0;
+  left: 12%;
   z-index: 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row-align: start;
-      align-self: start;
   width: 185px;
   text-align: center;
   text-transform: uppercase;
@@ -1054,18 +1051,11 @@ h1 {
   -ms-grid-columns: (0.1fr)[10];
       grid-template: 80px/repeat(10, 0.1fr);
   justify-items: center;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-animation: sponsors 20s linear infinite;
           animation: sponsors 20s linear infinite;
 }
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people,
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan-2,
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__people-2, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__buzzfeed-2,
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__cosmopolitan-3, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food,
-.box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-2, .box1__featured-in .feaurured-in__fi-sponsors .fi-sponsors__food-3 {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
 @media (max-width: 1200px) {
   .box1__featured-in {
     margin-top: 63px;
@@ -1166,8 +1156,8 @@ h1 {
 }
 @-webkit-keyframes sponsors {
   0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   100% {
     -webkit-transform: translateX(-40%);
@@ -1176,8 +1166,8 @@ h1 {
 }
 @keyframes sponsors {
   0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   100% {
     -webkit-transform: translateX(-40%);
@@ -1187,8 +1177,8 @@ h1 {
 @media (max-width: 992px) {
   @-webkit-keyframes sponsors {
     0% {
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
     }
     100% {
       -webkit-transform: translateX(-50%);
@@ -1197,8 +1187,8 @@ h1 {
   }
   @keyframes sponsors {
     0% {
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
     }
     100% {
       -webkit-transform: translateX(-50%);
@@ -1592,6 +1582,8 @@ h1 {
   -ms-grid-columns: (auto)[4];
       grid-template: auto/repeat(4, auto);
   opacity: 0.3;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-animation: bg-text 10s infinite linear;
           animation: bg-text 10s infinite linear;
   -ms-grid-column: 1;
@@ -1614,8 +1606,8 @@ h1 {
 }
 
 .box3-row1__text, .box3-row2__text, .box3-row3__text {
-  -webkit-transform: translate3d(0, 0, 0) rotate(-10deg);
-          transform: translate3d(0, 0, 0) rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -1718,8 +1710,8 @@ h1 {
 }
 @-webkit-keyframes bg-text {
   0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   100% {
     -webkit-transform: translateX(-25%);
@@ -1728,8 +1720,8 @@ h1 {
 }
 @keyframes bg-text {
   0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   100% {
     -webkit-transform: translateX(-25%);
