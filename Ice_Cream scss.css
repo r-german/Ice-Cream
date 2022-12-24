@@ -23,6 +23,8 @@ nav, footer, header, aside {
 }
 
 html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -458,7 +460,7 @@ h1 {
 }
 .box1__box1-slides .box1__hover, .box1__box1-slides .box1__click {
   position: absolute;
-  top: 0;
+  top: -2%;
   left: 10%;
   z-index: 3;
   width: 185px;
@@ -477,41 +479,40 @@ h1 {
 }
 @media (max-width: 1320px) {
   .box1__box1-slides .box1__hover, .box1__box1-slides .box1__click {
-    -webkit-transform: translate(-15%, -15%) rotate(-10deg);
-            transform: translate(-15%, -15%) rotate(-10deg);
+    top: -5%;
+    left: 9.5%;
   }
 }
 @media (max-width: 1200px) {
   .box1__box1-slides .box1__hover, .box1__box1-slides .box1__click {
+    top: -7%;
+    left: 11%;
     width: 145px;
     font-size: 25.6px;
     text-shadow: 1.6px 6.4px 4.8px rgba(204, 42, 65, 0.5), 0px -4px 28px rgba(255, 255, 255, 0.3);
-    -webkit-transform: translate(-15%, -25%) rotate(-10deg);
-            transform: translate(-15%, -25%) rotate(-10deg);
   }
 }
 @media (max-width: 1100px) {
   .box1__box1-slides .box1__hover, .box1__box1-slides .box1__click {
-    -webkit-transform: translate(-15%, -35%) rotate(-10deg);
-            transform: translate(-15%, -35%) rotate(-10deg);
+    top: -10%;
+    left: 10.4%;
   }
 }
 @media (max-width: 992px) {
   .box1__box1-slides .box1__hover, .box1__box1-slides .box1__click {
+    top: -14%;
     width: 130px;
     font-size: 22.4px;
     text-shadow: 1.4px 5.6px 4.2px rgba(204, 42, 65, 0.5), 0px -3.5px 24.5px rgba(255, 255, 255, 0.3);
-    -webkit-transform: translate(-17.5%, -60%) rotate(-10deg);
-            transform: translate(-17.5%, -60%) rotate(-10deg);
   }
 }
 @media (max-width: 867px) {
   .box1__box1-slides .box1__hover, .box1__box1-slides .box1__click {
+    top: -12%;
+    left: 12%;
     width: 95px;
     font-size: 16px;
     text-shadow: 1px 4px 3px rgba(204, 42, 65, 0.5), 0px -2.5px 17.5px rgba(255, 255, 255, 0.3);
-    -webkit-transform: translate(-20%, -60%) rotate(-10deg);
-            transform: translate(-20%, -60%) rotate(-10deg);
   }
 }
 @media (hover: hover) and (pointer: fine) {
@@ -891,116 +892,6 @@ h1 {
     color: rgba(255, 255, 255, 0.7);
   }
 }
-@media (max-width: 1320px) {
-  @-webkit-keyframes hover {
-    0% {
-      -webkit-transform: translate(-15%, -15%) rotate(-10deg);
-              transform: translate(-15%, -15%) rotate(-10deg);
-      color: rgb(204, 42, 65);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-  @keyframes hover {
-    0% {
-      -webkit-transform: translate(-15%, -15%) rotate(-10deg);
-              transform: translate(-15%, -15%) rotate(-10deg);
-      color: rgb(204, 42, 65);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-}
-@media (max-width: 1200px) {
-  @-webkit-keyframes hover {
-    0% {
-      -webkit-transform: translate(-15%, -25%) rotate(-10deg);
-              transform: translate(-15%, -25%) rotate(-10deg);
-      color: rgb(204, 42, 65);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-  @keyframes hover {
-    0% {
-      -webkit-transform: translate(-15%, -25%) rotate(-10deg);
-              transform: translate(-15%, -25%) rotate(-10deg);
-      color: rgb(204, 42, 65);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-}
-@media (max-width: 1100px) {
-  @-webkit-keyframes hover {
-    0% {
-      -webkit-transform: translate(-15%, -35%) rotate(-10deg);
-              transform: translate(-15%, -35%) rotate(-10deg);
-      color: rgb(204, 42, 65);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-  @keyframes hover {
-    0% {
-      -webkit-transform: translate(-15%, -35%) rotate(-10deg);
-              transform: translate(-15%, -35%) rotate(-10deg);
-      color: rgb(204, 42, 65);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-}
-@media (max-width: 992px) {
-  @-webkit-keyframes hover {
-    0% {
-      -webkit-transform: translate(-17.5%, -60%) rotate(-10deg);
-              transform: translate(-17.5%, -60%) rotate(-10deg);
-      color: rgb(204, 42, 65);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-  @keyframes hover {
-    0% {
-      -webkit-transform: translate(-17.5%, -60%) rotate(-10deg);
-              transform: translate(-17.5%, -60%) rotate(-10deg);
-      color: rgb(204, 42, 65);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-}
-@media (max-width: 867px) {
-  @-webkit-keyframes hover {
-    0% {
-      -webkit-transform: translate(-20%, -60%) rotate(-10deg);
-              transform: translate(-20%, -60%) rotate(-10deg);
-      color: rgb(204, 42, 65);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-  @keyframes hover {
-    0% {
-      -webkit-transform: translate(-20%, -60%) rotate(-10deg);
-              transform: translate(-20%, -60%) rotate(-10deg);
-      color: rgb(204, 42, 65);
-    }
-    100% {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-}
 .box1__featured-in {
   margin-top: 70px;
   position: relative;
@@ -1282,7 +1173,7 @@ h1 {
     line-height: 25.2px;
   }
 }
-@media (max-width: 563px) {
+@media (max-width: 600px) {
   .box2__we-only-text, .box2__supporting-text, .box2__special-text {
     padding: 18px 20px;
     row-gap: 16.8px;
@@ -1795,7 +1686,7 @@ h1 {
     line-height: 25.2px;
   }
 }
-@media (max-width: 535px) {
+@media (max-width: 600px) {
   .content__box4 {
     padding-bottom: 297.6px;
   }
@@ -1859,7 +1750,7 @@ h1 {
     text-shadow: 1.2px 4.8px 3.6px rgba(204, 42, 65, 0.5), 0px -3px 21px rgba(255, 255, 255, 0.3);
   }
 }
-@media (max-width: 535px) {
+@media (max-width: 600px) {
   .box4__try-today {
     font-size: 16px;
     text-shadow: 1px 4px 3px rgba(204, 42, 65, 0.5), 0px -2.5px 17.5px rgba(255, 255, 255, 0.3);
