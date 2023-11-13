@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="Ice-Cream.css">
+        <title>The Magic Slab</title>
+        <link rel="shortcut icon" type="image/x-icon" href="Ice-Cream_img/Ice-Cream_icon.ico">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+        <script src="script-dist.js" defer></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class = "menu-icon">
+                    <div class = "menu-icon__box">
+                        <span></span>
+                    </div>
+                </div>
+                <nav>
+                    <div class="nav__menu">
+                        <div class="menu__list">
+                            menu
+                            <div class="nav__arrow"></div>
+                        </div>
+                        <a data-goto = ".box1-swiper" href="#" class="menu__link">flavors</a>
+                        <a data-goto = ".content__box2" href="#" class="menu__link">about us</a>
+                        <a data-goto = ".content__box4" href="#" class="menu__link">milkshakes</a>
+                        <a data-goto = ".content__box5" href="#" class="menu__link">novelty</a>
+                    </div>
+                    <a data-goto = ".box1-swiper" href="#" class="nav__link">flavors</a>
+                    <a data-goto = ".content__box2" href="#" class="nav__link">about us</a>
+                    <a data-goto = ".content__box4" href="#" class="nav__link">milkshakes</a>
+                    <a data-goto = ".content__box5" href="#" class="nav__link">novelty</a>
+                    <a data-goto = ".content__box6" class="nav__photos" href="#">photos</a>
+                    <a data-goto = ".footer" href="#" class="nav__link">contact us</a>
+                </nav>
+                <h1>The Magic Slab</h1>
+                <a data-goto = ".footer" href="#" class="contact-us">contact us</a>
+            </header>
+            <div class="content">
+                <div class="content__box1">
+                    <div class="box1__fced">
+                        <p class="fced__freshly">Freshly</p>
+                        <p class="fced__churned">Churned</p>
+                        <p class="fced__every-day">Every Day</p>
+                    </div>
+                    <div class="swiper box1-swiper">
+                        <p class="swiper__hover">hover for flavors</p>
+                        <p class="swiper__click">click on the pic</p>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream1.webp" type="image/webp">
+                                    <img src = "Ice-Cream_img/Ice-Cream1.png" alt="">
+                                </picture>
+                                <div class="swiper-slide__description">
+                                    <p class = "description__text-1">Vanilla</p>
+                                    <p class = "description__text-2">Delicate cream and bourbon vanilla from Madagascar</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream2.webp" type="image/webp">
+                                    <img src = "Ice-Cream_img/Ice-Cream2.png" alt="">
+                                </picture>
+                                <div class="swiper-slide__description">
+                                    <p class = "description__text-1">Choco&Mint</p>
+                                    <p class = "description__text-2">Bright aroma of fresh mint, whipped cream and dark chocolate</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream3.webp" type="image/webp">
+                                    <img src = "Ice-Cream_img/Ice-Cream3.png" alt="">
+                                </picture>
+                                <div class="swiper-slide__description">
+                                    <p class = "description__text-1">Strawberry</p>
+                                    <p class = "description__text-2">Gentle, moderately sweet, with rich strawberry flavor</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream4.webp" type="image/webp">
+                                    <img src = "Ice-Cream_img/Ice-Cream4.png" alt="">
+                                </picture>
+                                <div class="swiper-slide__description">
+                                    <p class = "description__text-1">Espresso</p>
+                                    <p class = "description__text-2">Coffee pairs perfectly with semi-sweet chocolate chips</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream5.webp" type="image/webp">
+                                    <img src = "Ice-Cream_img/Ice-Cream5.png" alt="">
+                                </picture>
+                                <div class="swiper-slide__description">
+                                    <p class = "description__text-1">Caramel</p>
+                                    <p class = "description__text-2">The ideal balance of sweet yet salty and rich yet light</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream6.webp" type="image/webp">
+                                    <img src = "Ice-Cream_img/Ice-Cream6.png" alt="">
+                                </picture>
+                                <div class="swiper-slide__description">
+                                    <p class = "description__text-1">Dark Choco</p>
+                                    <p class = "description__text-2">Bittersweet chocolate and natural unsweetened cocoa powder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <img src="Ice-Cream_img/Ice-Cream_box1_button.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="Ice-Cream_img/Ice-Cream_box1_button.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="box1__featured-in">
+                        <p class="featured-in__text">FEATURED IN</p>
+                        <div class="feaurured-in__fi-sponsors anim-item anim-element">
+                            <img class="fi-sponsors__food" src="Ice-Cream_img/Ice-Cream_food.svg" alt="">
+                            <img class="fi-sponsors__cosmopolitan" src="Ice-Cream_img/Ice-Cream_cosmopolitan.svg" alt="">
+                            <img class="fi-sponsors__people" src="Ice-Cream_img/Ice-Cream_people.svg" alt="">
+                            <img class="fi-sponsors__buzzfeed" src="Ice-Cream_img/Ice-Cream_buzzfeed.svg" alt="">
+                            <img class="fi-sponsors__food-2" src="Ice-Cream_img/Ice-Cream_food.svg" alt="">
+                            <img class="fi-sponsors__cosmopolitan-2" src="Ice-Cream_img/Ice-Cream_cosmopolitan.svg" alt="">
+                            <img class="fi-sponsors__people-2" src="Ice-Cream_img/Ice-Cream_people.svg" alt="">
+                            <img class="fi-sponsors__buzzfeed-2" src="Ice-Cream_img/Ice-Cream_buzzfeed.svg" alt="">
+                            <img class="fi-sponsors__food-3" src="Ice-Cream_img/Ice-Cream_food.svg" alt="">
+                            <img class="fi-sponsors__cosmopolitan-3" src="Ice-Cream_img/Ice-Cream_cosmopolitan.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content__box2">
+                    <div class="box2__we-only-text">
+                        <p class="we-only-text__text1">We only use the highest quality ingredients</p>
+                        <p class="we-only-text__text2">The Slab is based on a simple, nostalgic idea: paying tribute to the original American ice cream parlor – built on quality ice cream, delicious toppings and a fun and inviting experience.</p>
+                    </div>
+                    <div class="box2__img1">
+                        <img class="img1__pic" src="Ice-Cream_img/Ice-Cream_box2_img1.jpg" alt="">
+                    </div>
+                    <div class="box2__supporting-text">
+                        <p class="supporting-text__text1">Supporting our local farmers</p>
+                        <p class="supporting-text__text2">Ice cream with the look and taste of an old favorite. Every bite melts in your mouth to leave a creamy, rich aftertaste. All of this is a direct result of our support for local farms with the best ingredients. Supplied fresh every morning, for every batch.</p>
+                    </div>
+                    <div class="box2__img2">
+                        <img class="img2__pic" src="Ice-Cream_img/Ice-Cream_box2_img2.jpg" alt="">
+                    </div>
+                    <div class="box2__special-text">
+                        <p class="special-text__text1">Special flavors added every week</p>
+                        <p class="special-text__text2">Participate in our Weekly Magic Flavor competition on Instagram and have your creative flavor added to the menu — for an ENTIRE month! If your flavor is selected, you receive 10 free cones on us!</p>
+                    </div>
+                    <div class="box2__img3">
+                        <img class="img3__pic" src="Ice-Cream_img/Ice-Cream_box2_img3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content__box3 anim-item">
+                    <div class="box3__box3-main">
+                        <p class="box3-main__text">
+                            we make ice
+                            <br>cr<span class="e">e</span>am the way
+                            <br>it used to be.
+                        </p> 
+                    </div>
+                    <div class="box3__box3-row1 anim-element">
+                        <div class="box3-row1__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                        <div class="box3-row1__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                        <div class="box3-row1__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                        <div class="box3-row1__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                    </div>
+                    <div class="box3__box3-row2 anim-element">
+                        <div class="box3-row2__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                        <div class="box3-row2__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                        <div class="box3-row2__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                        <div class="box3-row2__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                    </div>
+                    <div class="box3__box3-row3 anim-element">
+                        <div class="box3-row3__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                        <div class="box3-row3__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                        <div class="box3-row3__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                        <div class="box3-row3__text">
+                            we make ice
+                            <br>cr<span class="e-small">e</span>am the way
+                            <br>it used to be.
+                        </div>
+                    </div>
+                </div>
+                <div class="content__box4">
+                    <div class="box4__box4-text">
+                        <p class="box4__try-today anim-element">TRY TODAY</p>
+                        <div class="box4-text__mm">
+                            <span class="box4-text__new">NEW</span>
+                            Magic Milkshakes
+                        </div>
+                        <p class="box4-text__two-scoops">Two scoops of magic and one of ice cream?<br>Introducing delicious milkshakes with our real artisan ice cream.</p>
+                    </div> 
+                </div>
+                <div class="content__box5">
+                    <p class="box5__quote anim-element">request a quote</p>
+                    <img class="box5__img" src="Ice-Cream_img/Ice-Cream_box5_img2.png" alt="">
+                    <div class="box5__box5-text">
+                        <p class="box5-text__text1">
+                            Cater Your Next Event With
+                            <span class="box5-text__text1-tms">tms</span>
+                        </p>
+                        <p class="box5-text__text2">Too many parties have an un-magical, sad lack of ice cream. The Magic Slab, where ice cream is handmade with love and attention, is changing that. Come treat your guests or team with the best ice cream you've ever tasted.</p>
+                    </div>
+                </div>
+                <div class="content__box6">
+                    <a class="box6__TMS-link" href="https://telegram.org/" target="_blank">
+                        <span class="TMS-link__text">@THEM<span class="a">A</span>GICS<span class="l">L</span><span class="a2">A</span>B</span>
+                    </a>
+                    <p class="box6__text2">Put the magic in your feed and follow us on Telegram for updates into our creamy world!</p>
+                    <div class="swiper box6-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream_box6_img6.webp" type="image/webp">
+                                    <img src="Ice-Cream_img/Ice-Cream_box6_img6.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream_box6_img2.webp" type="image/webp">
+                                    <img src="Ice-Cream_img/Ice-Cream_box6_img2.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream_box6_img5.webp" type="image/webp">
+                                    <img src="Ice-Cream_img/Ice-Cream_box6_img5.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream_box6_img3.webp" type="image/webp">
+                                    <img src="Ice-Cream_img/Ice-Cream_box6_img3.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream_box6_img4.webp" type="image/webp">
+                                    <img src="Ice-Cream_img/Ice-Cream_box6_img4.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="Ice-Cream_img/Ice-Cream_box6_img1.webp" type="image/webp">
+                                    <img src="Ice-Cream_img/Ice-Cream_box6_img1.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev">
+                            <img src="Ice-Cream_img/Ice-Cream_box6_button.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next">
+                            <img src="Ice-Cream_img/Ice-Cream_box6_button.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <p class="footer__come">Come See Us</p>
+                <div class="footer__address">
+                    <div class="address__address-box">
+                        <img class="address-box__img" src="Ice-Cream_img/Ice-Cream_footer.svg" alt="">
+                        <p class="address-box__city">NEW YORK</p>
+                        <div class="spoiler-content">
+                            <p class="address-box__tel-number">646-394-3920</p>
+                            <p class="address-box__street">4096 Grove Street</p>
+                            <p class="address-box__mail">Farmingdale, NY 11735</p>
+                        </div>
+                    </div>
+                    <div class="address__address-box">
+                        <img class="address-box__img" src="Ice-Cream_img/Ice-Cream_footer.svg" alt="">
+                        <p class="address-box__city">CHICAGO</p>
+                        <div class="spoiler-content">
+                            <p class="address-box__tel-number">773-898-3028</p>
+                            <p class="address-box__street">1243 Virginia Street</p>
+                            <p class="address-box__mail">Chicago, IL 60629</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer__copyright">© 2023 designed by The Magic Slab. 
+                    <br>Developed by <a class="copyright__email" href="mailto:rizhovgerman@mail.ru">rizhovgerman@mail.ru</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
